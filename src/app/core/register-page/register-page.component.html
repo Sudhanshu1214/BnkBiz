@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+              <img class="Home-logo" src="assets/Images/Bnklogo.png" alt="">  
+        </div>
+        <div class="col-md-4">
+            <img class="logo" src="assets/Images/Bnk.png" alt="">
+            <form class="login-form" style="margin-left: 150px;" #registerForm="ngForm">
+                <div class="form-group">
+                    <mat-form-field  fxFlexAlign="center" appearance="fill">
+                        <mat-label >FirstName</mat-label>
+                        <input matInput placeholder="Enter FirstName" name="firstName" ngModel required>
+                        <mat-icon matPrefix>account_circle</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field  fxFlexAlign="center" appearance="fill">
+                        <mat-label >LastName</mat-label>
+                        <input matInput placeholder="Enter LastName" name="lastName" ngModel required>
+                        <mat-icon matPrefix>account_circle</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field  fxFlexAlign="center" appearance="fill">
+                        <mat-label >Email</mat-label>
+                        <input matInput placeholder="Enter Email" name="email" ngModel required>
+                        <mat-icon matPrefix>account_circle</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field  fxFlexAlign="center" appearance="fill">
+                        <mat-label >Username</mat-label>
+                        <input matInput placeholder="Enter Username" name="userName" ngModel required>
+                        <mat-icon matPrefix>account_circle</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field fxFlexAlign="center" appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Enter Password" name="password" ngModel type="password" required>
+                        <mat-icon matPrefix>lock</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div><br>
+                <button type="button" class="btn btn-primary" (click)="onSubmit(registerForm)">Register</button>
+                 <br><br><span><a routerLink="/"><h4>Back To Login ?</h4></a></span>
+             </form>
+        </div>
+    </div>
+</div>

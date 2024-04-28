@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+              <img class="Home-logo" src="assets/Images/Bnklogo.png" alt="">  
+        </div>
+        <div class="col-md-4">
+            <img class="logo" src="assets/Images/Bnk.png" alt="">
+            <form class="login-form" style="margin-left: 150px;" #loginForm="ngForm">
+                <div class="form-group">
+                    <mat-form-field  fxFlexAlign="center" appearance="fill">
+                        <mat-label >Username</mat-label>
+                        <input matInput placeholder="Enter Username" name="Username" ngModel required>
+                        <mat-icon matPrefix>account_circle</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div><br>
+                <div class="form-group">
+                    <mat-form-field fxFlexAlign="center" appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Enter Password" name="Password" ngModel type="password" required>
+                        <mat-icon matPrefix>lock</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div><br>
+                <button type="button" class="btn btn-primary" (click)="onSubmit(loginForm.value)">Login</button>
+                <br><br><span><a routerLink="/register"><h4>Register yourself ?</h4></a></span>
+             </form>
+              <app-footer></app-footer>
+        </div>
+    </div>
+</div>

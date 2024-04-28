@@ -1,0 +1,31 @@
+h3{
+    color: slategray;
+    margin-top: 10px;
+}
+h4{
+    border: 2px solid black;
+    cursor: pointer;
+}
+td:hover{
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    background-color: white;
+    padding: 4px;
+}
+tr{
+    border: 1px solid #ddd;
+}

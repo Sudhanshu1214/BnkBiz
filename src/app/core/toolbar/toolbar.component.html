@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+    <mat-icon>label_important</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+    <nav mat-tab-nav-bar backgroundColor="primary">
+        <span>
+            <a mat-tab-link class="tab-link" [matMenuTriggerFor]="adminMenu" #adminMenuTrigger="matMenuTrigger">
+                <mat-icon >admin_panel_settings</mat-icon>&nbsp; Admin
+            </a>
+            <a mat-tab-link class="tab-link" [matMenuTriggerFor]="accountingMenu" #accountingMenuMenuTrigger="matMenuTrigger">
+                <mat-icon>verified_user</mat-icon> &nbsp;Accounting
+            </a>
+            <a mat-tab-link class="tab-link" [matMenuTriggerFor]="HeadMenu" #HeadMenuMenuTrigger="matMenuTrigger">
+                <mat-icon>home</mat-icon>&nbsp;Head Office
+            </a>
+            <a mat-tab-link class="tab-link" [matMenuTriggerFor]="ReportsMenu" #ReportsMenuMenuTrigger="matMenuTrigger">
+                <mat-icon>description</mat-icon>&nbsp;Reports
+            </a>
+        </span>
+        <span style="margin-left: 1100px;">
+            <mat-icon >face</mat-icon>
+        </span>
+
+    </nav>
+</mat-toolbar>
+
+
+<mat-menu #adminMenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>User</button>
+    <button mat-menu-item [routerLink]="['/Loan']">Product</button>
+    <button mat-menu-item>System</button>
+    <button mat-menu-item>Payroll</button>
+    <button mat-menu-item>User</button>
+    <button mat-menu-item>Product</button>
+    <button mat-menu-item>System</button>
+    <button mat-menu-item>Payroll</button>
+    <button mat-menu-item>Product</button>
+    <button mat-menu-item>System</button>
+    <button mat-menu-item>Payroll</button>
+</mat-menu>
+
+<mat-menu #accountingMenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>Clients</button>
+    <button mat-menu-item>Admin</button>
+    <!-- <button mat-menu-item>System</button> -->
+</mat-menu>
+
+<mat-menu #HeadMenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>Main Branch</button>
+    <!-- <button mat-menu-item>Product</button> -->
+    
+</mat-menu>
+
+<mat-menu #ReportsMenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>All</button>
+    <button mat-menu-item>Loan</button>
+    <button mat-menu-item>Current</button>
+</mat-menu>

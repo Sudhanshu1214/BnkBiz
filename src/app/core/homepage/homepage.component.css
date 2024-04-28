@@ -1,0 +1,29 @@
+h1{
+    background-color: rgba(211, 211, 211, 0.906);
+    margin-top: 20px;
+}
+.dashboard{
+    width: 700px;
+    height: 40px;
+    box-shadow: 2px 2px 5px 5px black;
+    
+}
+.btn-dash{
+    float: right;
+    background-color: burlywood;
+}
+
+.Home-logo{
+    width: 700px;
+    height: 500px;
+    box-shadow: 2px 2px 5px 5px black;
+}
+.home-img{
+    width: 650px;
+    height: 400px;
+    margin-top: 20px;
+}
+h2{
+   margin-left: 20px;
+   /* margin-top: 20px; */
+}
